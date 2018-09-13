@@ -2329,9 +2329,18 @@ section {
   position: absolute;
   top: 7%;
   left: 1%; }
+  @media screen and (max-width: 600px) {
+    .pos-abs {
+      top: 18%; } }
 
 .mt-5 {
   top: 10% !important; }
 
 .padding-side {
   padding: 0 6rem; }
+
+.only-desk {
+  display: block; }
+  @media screen and (max-width: 600px) {
+    .only-desk {
+      display: none; } }
