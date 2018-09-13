@@ -1,0 +1,68 @@
+---
+layout: default
+---
+
+{% include nav.html %}
+
+<!-- USE THIS CODE -->
+
+<section id="contact" class="w3-sand">
+
+<div class="row w3-text-white">
+<div class="w3-center">
+   <img class="pos-abs mt-5" src="logo.jpg" height="100px">
+    <h2>GET IN TOUCH</h2>
+    <p>If you have any questions, do not hesitate to ask them</p>
+</div>
+<div class="w3-half padding-large">
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d486.12353471157223!2d77.5867725!3d12.9084748!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1512f0089639%3A0x6971192ff34c30a5!2s804%2C+22nd+Main+Rd%2C+2nd+Phase%2C+JP+Nagar%2C+Bengaluru%2C+Karnataka+560041!5e0!3m2!1sen!2sin!4v1536766354891" class="mt-3" allowfullscreen></iframe>
+
+</div>
+<div class="w3-half padding-large">
+  <form action="https://docs.google.com/forms/d/e/1FAIpQLSeEXh8nHxS_qEoixluO2IxlKPp6-ajjK2ouDBEBwfTw_-dcRw/formResponse">
+    <label for="fname">Name</label>
+    <input type="text" id="fname" name="entry.1035381518" placeholder="Your name..">
+    <label for="num">Phone</label>
+    <input type="number" id="num" name="entry.1144606541" placeholder="Your phone number..">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="entry.1549670179" placeholder="Your email address..">
+    <label for="prop">Property Type</label>
+    <select id="prop" name="entry.413208302">
+      <option name="entry.413208302" data-value="residence">Residence</option>
+      <option name="entry.413208302" data-value="office">Office</option>
+      <option name="entry.413208302" data-value="commercial">Commercial</option>
+    </select>
+    <label for="budget">Budget (in lakhs)</label>
+    <input type="number" id="budget" name="entry.1221126028" placeholder="Your budget" min="1">
+    
+    <label for="subject">Any specific requirements?</label>
+    <textarea id="subject" name="entry.476055939" placeholder="Write something.." style="height:170px"></textarea>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</div>
+
+
+</section>
+
+
+
+<!-- <script>
+function myMap() {
+  myCenter=new google.maps.LatLng(12.9716, 77.5946);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHKKwvrNo-80FJorFrG1x7bzR_kVPYmJU&callback=myMap"></script> -->
+

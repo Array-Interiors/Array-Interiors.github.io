@@ -1,0 +1,424 @@
+---
+---
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<style>
+
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+div.w3-bar:hover{background-color:black;}
+.fa-anchor,.fa-coffee {font-size:200px}
+/* Navbar dropdown in Looks*/
+
+.dropdown {
+    float: left;
+	overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: white;
+	color:black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #545459;
+	color:white;
+	min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+	    outline: none;
+
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    color: #50d831;
+}
+
+.show {
+    display: block;
+}
+
+
+
+
+.dropdown {
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: black;
+	padding:12px 18px;
+    background-color: inherit;
+    font: inherit;
+   
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content .header {
+    background: black;
+    padding: 2px;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Create equal columns that floats next to each other  in looks section*/
+.column {
+    float: left;
+    width: 16.66%;
+    padding: 8px;
+    background-color: white;
+    height: 200px;
+}
+.column {
+    float: left;
+    width: 16.66%;
+    padding: 3px;
+    background-color: white;
+    height: 200px;
+}
+
+
+.xyz{ 
+	background-image: url('mainbgd.jpg');
+	background-position:center;
+	background-size:cover;
+	min-height: 100%;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	}
+.column a {
+    float: none;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.column a:hover {
+    color: #50c647;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        height: auto;
+    }
+}
+.myBtn3 {
+    width: 150px;
+    font-size: 15px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+	text-decoration:none;
+background-color:light-grey
+}
+.zo:hover{ font-style:bold;
+ font-size:15px;
+	}
+.linkd{ text-decoration:none;}
+
+
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+.mySlides2 {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+.hov:hover {height:200px;};
+
+
+
+/* Slideshow container */
+.slideshow-container2 {
+  position: relative;
+  margin: auto;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.footer2 {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #f9f9f9;
+}
+div.linkd{ text-decoration:none;}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: black;
+	padding:12px 18px;
+    background-color: inherit;
+    font: inherit;
+   
+}
+div.linkd{ text-decoration:none;}
+div.timeline {
+  max-width: 600px;
+  margin: auto;
+}
+
+p {
+
+  border-top: 2px dashed;
+  border-color: #cc965d !important;
+  margin:0; padding: 30px;
+}
+
+
+
+p:nth-child(even) {
+  border-left: 2px dashed;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  margin-right: 30px; 
+  padding-right: 0;
+}
+
+p:nth-child(odd) {
+  border-right: 2px dashed;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin-left: 30px; 
+  padding-left: 0;
+}
+
+p:first-child {
+  border-top: 0;
+  border-top-right-radius:0;
+  border-top-left-radius:0;
+}
+
+p:last-child {
+  border-bottom-right-radius:0;
+  border-bottom-left-radius:0;
+}
+.yz{ 
+	background-image: url('/navimg.jpg');
+	background-position:center;
+	background-size:cover;
+	min-height:100%;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	}
+	
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+</style>
+<body>
+{% include nav.html %}
+
+<!-- Header section-->
+<div class="w3-sand w3-text-white  w3-center yz" style="padding:180px 30px;text-shadow:2px 2px 3px grey">
+ <h1><b>HOW WE WORK??</b></h1>
+ <img class="pos-abs mt-5" src="logo.jpg" height="100px">
+</div>
+
+<!-- Teamline section-->
+<div class="timeline">
+  <p><br><span style="font-size:30px;color:#cc965d">1. Client meeting on Site/ Taking the floor plan
+</span></p>
+	<p><br><span style="font-size:30px;color:#cc965d">2. Taking down requirements</span></p>
+	<p><br><span style="font-size:30px;color:#cc965d">3. Best possible tentative quotation</span></p>
+	<p><br><span style="font-size:30px;color:#cc965d">4. Taking approval and start designing</span></p>
+	<p><br><span style="font-size:30px;color:#cc965d">5. Execution till curtains fall</span></p>
+  <hr><hr>
+</div>
+
+<!-- FAQ section using accordins-->
+
+<div class="w3-container w3-padding">
+	<h2 class="w3-center" style="color:#cc965d">Frequently Asked Questions</h2>
+	<button class="accordion">1. Do u work with Factory Finish ? </button>
+<div class="panel">
+	<h6>Yes, we do for wardrobes and kitchens.</h6>
+</div>
+
+<button class="accordion">2. Do you use any designer material ?</button>
+<div class="panel">
+	<h6>Yes, we use a huge range of designer materials like Stone Claddings MDF grills, Waveboards, Laqured Glass, Foam wall papers, 3D wall papers, 3.D Panels and so on.</h6>
+</div>
+
+<button class="accordion">3. We have a very Low budget. Would you still design for us ?
+</button>
+<div class="panel">
+	<h6> Yes! Definitely. We give an 2BHK apartment for as minimum as 2.8 lakhs (with wardrobes & kitchen).
+</h6>
+</div>
+</div>
+
+
+<!-- Contact section-->
+
+{% include contact-section.html %}
+{% include footer.html %}
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
