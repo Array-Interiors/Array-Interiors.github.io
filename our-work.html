@@ -19,9 +19,12 @@
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 <style>
-.w3-quarter{cursor:pointer;}
-.w3-container{padding:20px;}
-
+.work-card img{height:600px;}
+.work-card .w3-quarter{cursor:pointer;width:33%}
+.work-card .w3-container{padding:20px;height:120px;background-color:#B99588 !important}
+.work-card h3{font-size: 21px;
+    color: #fff;
+}
 .modal2 {
     position: fixed;
     top: 0;
@@ -33,6 +36,7 @@
     overflow: hidden;
     outline: 0;
 }
+.slick-prev, .slick-next{z-index:9999}
 * {
   padding: 0;
   margin: 0;
@@ -40,7 +44,10 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
+.modal-header .close{cursor: pointer;
+    background: #B99588;
+   
+    color: #fff;}
 
 
 .modal-dialog {
@@ -57,8 +64,9 @@
   opacity: 1;
 }
 
+
 .slick-prev:before, .slick-next:before {
-  color: black;
+  color: #B99588;font-size:44px;
 }
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
@@ -316,10 +324,11 @@ div.linkd{ text-decoration:none;}
     font: inherit;
    
 }
-    
+    .modal-footer .btn{background:#B99588;boder:#B99588}
 .float-right {
     float: right;
 }
+.w3-padding-64{padding-top:0px!important;}
 </style>
 </head>
 <body>
@@ -441,9 +450,8 @@ div.linkd{ text-decoration:none;}
 <section id="work">
 <!-- Work section -->
 <div class="w3-row-padding w3-padding-large w3-center" >
-	<h1 style="color:#000;">Our Work</h1>
-	<p>We work to give you the best. We work to keep up your imagination of of your dream home. We work to give the best of service at the best of price.<br>
-Our main focus is on Living/Dining room, Bed Rooms, Kid's room and Kitchen.</p>
+	<h1 style="color:#000;margin-bottom:35px;">Our Work</h1>
+	
 
 <div class="w3-quarter" data-toggle="modal" data-target="#exampleModalCenter">
 	<div class="w3-card w3-white work-card" style="">
