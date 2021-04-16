@@ -11844,4 +11844,7 @@ a.text-dark:hover {
     position: unset !important;
 }
 .dropdown{position:unset!important;}
+.topnav .dropdown-content h6.w3-center {
+    margin-top: 26px;
+}
 /*# sourceMappingURL=bootstrap.min.css.map */
