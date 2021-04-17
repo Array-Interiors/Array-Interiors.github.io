@@ -11847,4 +11847,12 @@ a.text-dark:hover {
 .topnav .dropdown-content h6.w3-center {
     margin-top: 26px;
 }
+
+.topnav a:hover{color: #Bb4f39!important;
+    text-decoration: none;
+    font-weight: bold;}
+.dropbtn:hover{color: #Bb4f39!important;
+    text-decoration: none;
+    font-weight: bold;}
+	
 /*# sourceMappingURL=bootstrap.min.css.map */
