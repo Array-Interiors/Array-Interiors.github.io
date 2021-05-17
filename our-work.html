@@ -1,870 +1,1567 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Array Interiors</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/css/main.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com//css?family=Lato">
-<link rel="stylesheet" href="https://fonts.googleapis.com//css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-<link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick-theme.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
-<style>
-.work-card img{height:600px;}
-.work-card .w3-quarter{cursor:pointer;width:33%}
-.work-card .w3-container{padding:20px;height:120px;background-color:#Bb4f39!important}
-.work-card h3{font-size: 21px;
-    color: #fff;
-}
-.wrap-modal-slider .slick-next {
-    right: -45px;
-}
-.wrap-modal-slider .slick-prev {
-    left: -45px;
-}
+  <head>
+    <title>Array Interiors</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com//css?family=Lato"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com//css?family=Montserrat"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://kenwheeler.github.io/slick/slick/slick-theme.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <style>
+      .work-card img {
+        height: 600px;
+      }
+      .work-card .w3-quarter {
+        cursor: pointer;
+        width: 33%;
+      }
+      .work-card .w3-container {
+        padding: 20px;
+        height: 120px;
+        background-color: #bb4f39 !important;
+      }
+      .work-card h3 {
+        font-size: 21px;
+        color: #fff;
+      }
+      .wrap-modal-slider .slick-next {
+        right: -45px;
+      }
+      .wrap-modal-slider .slick-prev {
+        left: -45px;
+      }
 
-.wrap-modal-slider .slick-prev, .slick-next {
-    width: 44px;
-    height: 40px;
-}
-.wrap-modal-slider3 .slick-next {
-    right: -45px;
-}
-.wrap-modal-slider3 .slick-prev {
-    left: -45px;
-}
-.wrap-modal-slider3 {
-    padding: 0px 30px;
-}
-.wrap-modal-slider3 .slick-prev, .slick-next {
-    width: 44px;
-    height: 40px;
-}
+      .wrap-modal-slider .slick-prev,
+      .slick-next {
+        width: 44px;
+        height: 40px;
+      }
+      .wrap-modal-slider3 .slick-next {
+        right: -45px;
+      }
+      .wrap-modal-slider3 .slick-prev {
+        left: -45px;
+      }
+      .wrap-modal-slider3 {
+        padding: 0px 30px;
+      }
+      .wrap-modal-slider3 .slick-prev,
+      .slick-next {
+        width: 44px;
+        height: 40px;
+      }
 
-.wrap-modal-slider2 .slick-next {
-    right: -45px;
-}
-.wrap-modal-slider2 .slick-prev {
-    left: -45px;
-}
-.wrap-modal-slider2 {
-    padding: 0px 30px;
-}
-.wrap-modal-slider2 .slick-prev, .slick-next {
-    width: 44px;
-    height: 40px;
-}
-.modal2 {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1050;
-    display: none;
-    overflow: hidden;
-    outline: 0;
-}
-.slick-prev, .slick-next{z-index:9999}
-* {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.modal-header .close{cursor: pointer;
-    background: #Bb4f39;
-   
-    color: #fff;}
+      .wrap-modal-slider2 .slick-next {
+        right: -45px;
+      }
+      .wrap-modal-slider2 .slick-prev {
+        left: -45px;
+      }
+      .wrap-modal-slider2 {
+        padding: 0px 30px;
+      }
+      .wrap-modal-slider2 .slick-prev,
+      .slick-next {
+        width: 44px;
+        height: 40px;
+      }
+      .modal2 {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1050;
+        display: none;
+        overflow: hidden;
+        outline: 0;
+      }
+      .slick-prev,
+      .slick-next {
+        z-index: 9999;
+      }
+      * {
+        padding: 0;
+        margin: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      .modal-header .close {
+        cursor: pointer;
+        background: #bb4f39;
 
+        color: #fff;
+      }
 
-.modal-dialog {
-  max-width: 730px;
-}
+      .modal-dialog {
+        max-width: 730px;
+      }
 
-.wrap-modal-slider {
-  padding: 0 30px;
-  opacity: 0;
-  transition: all 0.3s;
-}
+      .wrap-modal-slider {
+        padding: 0 30px;
+        opacity: 0;
+        transition: all 0.3s;
+      }
 
-.wrap-modal-slider.open {
-  opacity: 1;
-}
+      .wrap-modal-slider.open {
+        opacity: 1;
+      }
 
+      .slick-prev:before,
+      .slick-next:before {
+        color: #bb4f39;
+        font-size: 44px;
+      }
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Lato", sans-serif;
+      }
+      .w3-bar,
+      h1,
+      button {
+        font-family: "Montserrat", sans-serif;
+      }
+      div.w3-bar:hover {
+        background-color: black;
+      }
+      .fa-anchor,
+      .fa-coffee {
+        font-size: 200px;
+      }
+      /* Navbar dropdown in Looks*/
 
-.slick-prev:before, .slick-next:before {
-  color: #Bb4f39;font-size:44px;
-}
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-div.w3-bar:hover{background-color:black;}
-.fa-anchor,.fa-coffee {font-size:200px}
-/* Navbar dropdown in Looks*/
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
 
-.dropdown {
-    float: left;
-	overflow: hidden;
+      .dropdown .dropbtn {
+        cursor: pointer;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        background-color: inherit;
+        font-family: inherit;
+      }
 
-}
+      .navbar a:hover,
+      .dropdown:hover .dropbtn,
+      .dropbtn:focus {
+        background-color: white;
+        color: black;
+      }
 
-.dropdown .dropbtn {
-    cursor: pointer;
-    font-size: 16px;    
-    border: none;
-    outline: none;
-    color: white;
-    background-color: inherit;
-    font-family: inherit;
-}
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #545459;
+        color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
 
-.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-    background-color: white;
-	color:black;
-}
+      .dropdown-content a {
+        float: none;
+        color: white;
+        outline: none;
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #545459;
-	color:white;
-	min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
 
-.dropdown-content a {
-    float: none;
-    color: white;
-	    outline: none;
+      .dropdown-content a:hover {
+        color: #50d831;
+      }
 
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
+      .show {
+        display: block;
+      }
 
-.dropdown-content a:hover {
-    color: #50d831;
-}
+      .dropdown {
+        overflow: hidden;
+      }
 
-.show {
-    display: block;
-}
+      .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: black;
+        padding: 12px 18px;
+        background-color: inherit;
+        font: inherit;
+      }
 
+      .navbar a:hover,
+      .dropdown:hover .dropbtn {
+        background-color: white;
+      }
 
-
-
-.dropdown {
-    overflow: hidden;
-}
-
-.dropdown .dropbtn {
-    font-size: 16px;    
-    border: none;
-    outline: none;
-    color: black;
-	padding:12px 18px;
-    background-color: inherit;
-    font: inherit;
-   
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: white;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: black;
-    width: 100%;
-    left: 0;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content .header {
-    background: black;
-    padding: 2px;
-    color: white;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Create equal columns that floats next to each other in looks section*/
-.column {
-    float: left;
-    width: 16.66%;
-    padding: 8px;
-    background-color: white;
-    height: 200px;
-}
-.column {
-    float: left;
-    width: 16.66%;
-    padding: 3px;
-    background-color: white;
-    height: 200px;
-}
-
-/* Mainbackground*/
-
-.xyz{ 
-	background-image: url('mainbgd.jpg');
-	background-position:center;
-	background-size:cover;
-	min-height:100%
-	background-repeat:no-repeat;
-	background-attachment:fixed;
-	}
-.column a {
-    float: none;
-    color: black;
-    padding: 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.column a:hover {
-    color: #50c647;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 300px) {
-    .column {
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: black;
         width: 100%;
-        height: auto;
-    }
-}
-.myBtn3 {
-    width: 150px;
-    font-size: 15px;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-	text-decoration:none;
-background-color:light-grey
-}
-.zo:hover{ font-style:bold;
- font-size:15px;
-	}
-.linkd{ text-decoration:none;}
+        left: 0;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
 
+      .dropdown-content .header {
+        background: black;
+        padding: 2px;
+        color: white;
+      }
 
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
 
-* {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
-.mySlides {display: none;}
-.mySlides2 {display: none;}
-img {vertical-align: middle;}
+      /* Create equal columns that floats next to each other in looks section*/
+      .column {
+        float: left;
+        width: 16.66%;
+        padding: 8px;
+        background-color: white;
+        height: 200px;
+      }
+      .column {
+        float: left;
+        width: 16.66%;
+        padding: 3px;
+        background-color: white;
+        height: 200px;
+      }
 
-/* Slideshow container */
-.slideshow-container {
-  position: relative;
-  margin: auto;
-}
+      /* Mainbackground*/
 
-.active {
-  background-color: #717171;
-}
+      .xyz {
+        background-image: url("mainbgd.jpg");
+        background-position: center;
+        background-size: cover;
+        min-height: 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      .column a {
+        float: none;
+        color: black;
+        padding: 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
+      .column a:hover {
+        color: #50c647;
+      }
 
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
 
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
+      /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 300px) {
+        .column {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .myBtn3 {
+        width: 150px;
+        font-size: 15px;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        background-color: light-grey;
+      }
+      .zo:hover {
+        font-style: bold;
+        font-size: 15px;
+      }
+      .linkd {
+        text-decoration: none;
+      }
 
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Verdana, sans-serif;
+      }
+      .mySlides {
+        display: none;
+      }
+      .mySlides2 {
+        display: none;
+      }
+      img {
+        vertical-align: middle;
+      }
 
-.hov:hover {height:200px;};
+      /* Slideshow container */
+      .slideshow-container {
+        position: relative;
+        margin: auto;
+      }
 
+      .active {
+        background-color: #717171;
+      }
 
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
 
-/* Slideshow container */
-.slideshow-container2 {
-  position: relative;
-  margin: auto;
-}
+      @-webkit-keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
 
-.active {
-  background-color: #717171;
-}
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
+      .hov:hover {
+        height: 200px;
+      }
 
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
+      /* Slideshow container */
+      .slideshow-container2 {
+        position: relative;
+        margin: auto;
+      }
 
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
+      .active {
+        background-color: #717171;
+      }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-.footer2 {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: #f9f9f9;
-}
-div.linkd{ text-decoration:none;}
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
 
-.dropdown .dropbtn {
-    font-size: 16px;    
-    border: none;
-    outline: none;
-    color: black;
-	padding:12px 18px;
-    background-color: inherit;
-    font: inherit;
-   
-}
-    .modal-footer .btn{background:#Bb4f39;boder:#Bb4f39!important;}
-.float-right {
-    float: right;
-}
-.w3-padding-64{padding-top:0px!important;}
-</style>
-</head>
-<body>
+      @-webkit-keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
 
-<!-- Navigation bar -->
-<div class="topnav" style="position:fixed;width:100%;letter-spacing:3px;z-index:1;opacity:0.9">
-  <div class="w3-bar w3-black w3-card w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-hide-large w3-right w3-padding-large w3-large w3-black" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="index.html" class="w3-bar-item w3-button zo" style="letter-spacing:1px"><span style="font-size:16px"><b>ARRAY INTERIORS</b></span></a>
-    
-    <div class="float-right">
-    <a href="index.html#about" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-padding-large  zo w3-small" style="margin-top:5px">ABOUT US</a>
-	  <div class="dropdown" style="">
-    <div class="dropbtn zo w3-small w3-hide-small w3-hide-medium w3-black w3-button" style="margin-top:5px;">LOOKS <i class="fa fa-caret-down"></i>
-    </div>
-    <div class="dropdown-content w3-center">
-       <div class="row12">
-        <div class="column w3-center">
-		<a href="living.html">
-		<img src="livingroom/1.jpg" style="max-height:120px; width: 100%" class="w3-center">
-          <h6 style="color:black" class="w3-center">Living/Dining Room</h6>
-		  </a>
-           </div>
-           <div class="column w3-center">
-            <a href="bedrooms.html">
-		<img src="bedrooms/bedroom.jpg" style="max-height:120px; width: 100%" class="w3-center">
-          <h6 style="color:black" class="w3-center">Bed Room</h6></a>
-           </div>
-           
-           <div class="column w3-center">		<a href="kitchens.html">
-		<img src="kitchens/1.jpg" style="max-height:120px; width: 100%" class="w3-center">
-          <h6 style="color:black" class="w3-center">Kitchens</h6></a>
-           </div>
-           
-           <div class="column w3-center">
-					<a href="kidrooms.html">
-		<img src="kidsrooms/9.jpg" style="max-height:120px; width: 100%" class="w3-center">
-          <h6 style="color:black" class="w3-center">Kids' Room</h6></a>
-           </div>
-           
-		    <div class="column w3-center">	
-			<a href="pooja.html">
-		<img src="pooja/2.jpg" style="max-height:120px; width: 100%" class="w3-center">
-          <h6 style="color:black" class="w3-center">Pooja Room</h6></a>
-           </div>
-		      <div class="column w3-center">	
-			       <a href="foyer.html">
-		        <img src="3ddesigns/2.jpg" style="max-height:120px; width: 100%" class="w3-center">
-            <h6 style="color:black" class="w3-center">Foyer</h6></a>
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .text {
+          font-size: 11px;
+        }
+      }
+      .footer2 {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #f9f9f9;
+      }
+      div.linkd {
+        text-decoration: none;
+      }
+
+      .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: black;
+        padding: 12px 18px;
+        background-color: inherit;
+        font: inherit;
+      }
+      .modal-footer .btn {
+        background: #bb4f39;
+        border: #bb4f39 !important;
+      }
+      .float-right {
+        float: right;
+      }
+      .w3-padding-64 {
+        padding-top: 0px !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <div
+      class="topnav"
+      style="
+        position: fixed;
+        width: 100%;
+        letter-spacing: 3px;
+        z-index: 1;
+        opacity: 0.9;
+      "
+    >
+      <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+        <a
+          class="
+            w3-bar-item
+            w3-button
+            w3-hide-large
+            w3-right
+            w3-padding-large
+            w3-large
+            w3-black
+          "
+          href="javascript:void(0);"
+          onclick="myFunction()"
+          title="Toggle Navigation Menu"
+          ><i class="fa fa-bars"></i
+        ></a>
+        <a
+          href="index.html"
+          class="w3-bar-item w3-button zo"
+          style="letter-spacing: 1px"
+          ><span style="font-size: 16px"><b>ARRAY INTERIORS</b></span></a
+        >
+
+        <div class="float-right">
+          <a
+            href="index.html#about"
+            class="
+              w3-bar-item
+              w3-button
+              w3-hide-small
+              w3-hide-medium
+              w3-padding-large
+              zo
+              w3-small
+            "
+            style="margin-top: 5px"
+            >ABOUT US</a
+          >
+          <div class="dropdown">
+            <div
+              class="
+                dropbtn
+                zo
+                w3-small w3-hide-small w3-hide-medium w3-black w3-button
+              "
+              style="margin-top: 5px"
+            >
+              LOOKS <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="dropdown-content w3-center">
+              <div class="row12">
+                <div class="column w3-center">
+                  <a href="living.html">
+                    <img
+                      src="livingroom/1.jpg"
+                      style="max-height: 120px; width: 100%"
+                      class="w3-center"
+                    />
+                    <h6 style="color: black" class="w3-center">
+                      Living/Dining Room
+                    </h6>
+                  </a>
+                </div>
+                <div class="column w3-center">
+                  <a href="bedrooms.html">
+                    <img
+                      src="bedrooms/bedroom.jpg"
+                      style="max-height: 120px; width: 100%"
+                      class="w3-center"
+                    />
+                    <h6 style="color: black" class="w3-center">Bed Room</h6></a
+                  >
+                </div>
+
+                <div class="column w3-center">
+                  <a href="kitchens.html">
+                    <img
+                      src="kitchens/1.jpg"
+                      style="max-height: 120px; width: 100%"
+                      class="w3-center"
+                    />
+                    <h6 style="color: black" class="w3-center">Kitchens</h6></a
+                  >
+                </div>
+
+                <div class="column w3-center">
+                  <a href="kidrooms.html">
+                    <img
+                      src="kidsrooms/9.jpg"
+                      style="max-height: 120px; width: 100%"
+                      class="w3-center"
+                    />
+                    <h6 style="color: black" class="w3-center">
+                      Kids' Room
+                    </h6></a
+                  >
+                </div>
+
+                <div class="column w3-center">
+                  <a href="pooja.html">
+                    <img
+                      src="pooja/2.jpg"
+                      style="max-height: 120px; width: 100%"
+                      class="w3-center"
+                    />
+                    <h6 style="color: black" class="w3-center">
+                      Pooja Room
+                    </h6></a
+                  >
+                </div>
+                <div class="column w3-center">
+                  <a href="foyer.html">
+                    <img
+                      src="3ddesigns/2.jpg"
+                      style="max-height: 120px; width: 100%"
+                      class="w3-center"
+                    />
+                    <h6 style="color: black" class="w3-center">Foyer</h6></a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
+          <a
+            href="our-work.html"
+            class="
+              w3-bar-item
+              w3-button
+              w3-hide-small
+              w3-hide-medium
+              w3-padding-large
+              zo
+              w3-small
+            "
+            style="margin-top: 5px"
+            >OUR WORK</a
+          >
 
-      </div>
-    </div>
-  </div> 
-      <a href="our-work.html" class="w3-bar-item w3-button w3-hide-small  w3-hide-medium  w3-padding-large zo w3-small" style="margin-top:5px">OUR WORK</a>
-    
-    <a href="index.html#materials" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-padding-large zo w3-small" style="margin-top:5px;">MATERIALS</a>
-      <a href="howitworks.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-padding-large  zo w3-small" style="margin-top:5px;"> HOW WE WORK?</a> 
-    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-padding-large zo w3-small" style="margin-top:5px;">CONTACT US</a>
-   </div>
-</div>
-<!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-bar w3-hide w3-hide-large w3-large w3-text-white" style="background-color:#353638">
-      <a href="index.html#about" class="w3-bar-item w3-button w3-padding-large">ABOUT US</a>
-	    
-   <div class="dropdown zo w3-bar">
-    <button class="dropbtn w3-bar-item w3-padding-large w3-text-white"> LOOKS 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content w3-black">
-       <div class="row ">
-        <div class=" w3-center ">
-          <a href="living.html"><h6> Living/Dining rooms</h6></a>
-           </div>
-           <div class=" w3-center">
-          <a href="bedrooms.html"><h6> Bed rooms</h6></a>
-           </div>
-           <div class=" w3-center">
-          <a href="kitchens.html"><h6> Kitchens</h6></a>
-           </div>
-           <div class=" w3-center">
-          <a href="kidrooms.html"><h6> Kids' rooms</h6></a>
-           </div>
-		    <div class=" w3-center">
-          <a href="pooja.html"><h6> Pooja room</h6></a>
-           </div>
-		    <div class=" w3-center">
-          <a href="foyer.html"><h6> Foyer</h6></a>
-           </div>  
-      </div>
-    </div>
-</div>
-	    <a href="our-work.html" class="w3-bar-item w3-button w3-padding-large">OUR WORK</a>
-    <a href="index.html#materials" class="w3-bar-item w3-button w3-padding-large">MATERIALS</a>
-    <a href="howitworks.html" class="w3-bar-item w3-button w3-padding-large">HOW WE WORK?</a>
-    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large">CONTACT US</a>
-  </div>
-</div>
-<!-- Header section-->
-<header class="w3-container xyz w3-teal" style="padding:62px 16px;height:100vh">
-<img src="logo.jpg" height="100px">
-<div class="w3-center" style="padding:30px 16px;min-height:650px"> 
-<p class="w3-xxxlarge" style="text-shadow:1px 1px 3px black">ARRAY INTERIORS<br>
-<span class="w3-xlarge" >Designing Dreams</span></p>
-  <a href="howitworks.html"><button class="w3-button w3-white w3-padding-large w3-large w3-margin-top">Get Started</button></a>
-</div>
-</header>
-
-
-<!-- About us section -->
-<div class="w3-row-padding w3-padding-64 w3-container  w3-text-white" id="ourwork">
-
-
-
-<!-- Statistics section for mobile view-->
-
-
-
-<section id="work">
-<!-- Work section -->
-<div class="w3-row-padding w3-padding-large w3-center" >
-	<h1 style="color:#000;margin-bottom:35px;">Our Work</h1>
-	
-
-<div class="w3-quarter" data-toggle="modal" data-target="#exampleModalCenter">
-	<div class="w3-card w3-white work-card" style="">
-	<img src="projects/Rahul/rahul1.jfif" alt="Lights" style="width:100%">
-	<div class="w3-container">
-	<h3>Project of Mr Rahul Parkwest</h3>
-	<!--p> Array Interiors design highly curated living rooms suiting your comforts without compromising on luxury.</p-->  
-	</div>
-	
-    </div>
-</div>
-    
-	
-
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle" style="color:#000;">Project of Mr Rahul Parkwest</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="wrap-modal-slider">
-          <div class="your-class">
-            <div><img src="projects/Rahul/rahul2.jfif" alt="" style="width:100%;height:660px;"></div>
-            <div><img src="projects/Rahul/rahul3.jfif" alt="" style="width:100%;height:660px;"></div>
-            <div><img src="projects/Rahul/rahul4.jfif" alt="" style="width:100%;height:660px;"></div>
-			<div><img src="projects/Rahul/rahul5.jfif" alt="" style="width:100%;height:660px;"></div>
-            <div><img src="projects/Rahul/rahul6.jfif" alt="" style="width:100%;height:660px;"></div>
-            <div><img src="projects/Rahul/rahul7.jfif" alt="" style="width:100%;height:660px;"></div>
-			<div><img src="projects/Rahul/rahul8.jfif" alt="" style="width:100%;height:660px;"></div>
-            <div><img src="projects/Rahul/rahul9.jfif" alt="" style="width:100%;height:660px;"></div>
-            <div><img src="projects/Rahul/rahul10.jfif" alt="" style="width:100%;height:660px;"></div>
-			<div><img src="projects/Rahul/rahul11.jfif" alt="" style="width:100%;height:660px;"></div>
-            <div><img src="projects/Rahul/rahul12.jfif" alt="" style="width:100%;height:660px;"></div>
-    
-          </div>
+          <a
+            href="index.html#materials"
+            class="
+              w3-bar-item
+              w3-button
+              w3-hide-small
+              w3-hide-medium
+              w3-padding-large
+              zo
+              w3-small
+            "
+            style="margin-top: 5px"
+            >MATERIALS</a
+          >
+          <a
+            href="howitworks.html"
+            class="
+              w3-bar-item
+              w3-button
+              w3-hide-small
+              w3-hide-medium
+              w3-padding-large
+              zo
+              w3-small
+            "
+            style="margin-top: 5px"
+          >
+            HOW WE WORK?</a
+          >
+          <a
+            href="contact.html"
+            class="
+              w3-bar-item
+              w3-button
+              w3-hide-small
+              w3-hide-medium
+              w3-padding-large
+              zo
+              w3-small
+            "
+            style="margin-top: 5px"
+            >CONTACT US</a
+          >
         </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      
-      </div>
-    </div>
-  </div>
-</div>
+      <!-- Navbar on small screens -->
+      <div
+        id="navDemo"
+        class="w3-bar-block w3-bar w3-hide w3-hide-large w3-large w3-text-white"
+        style="background-color: #353638"
+      >
+        <a
+          href="index.html#about"
+          class="w3-bar-item w3-button w3-padding-large"
+          >ABOUT US</a
+        >
 
-
-
-
-<div class="w3-quarter" data-toggle="modal" data-target="#exampleModalCenter2">
-	<div class="w3-card w3-white work-card" style="">
-		<img src="projects/Ravish/ravish2.jfif" alt="Lights" style="width:100%">
-	<div class="w3-container">
-	<h3>Project of Mr Ravish , Skandavani Villa at Sarjapur</h3>
-	<!--p> Array Interiors design highly curated living rooms suiting your comforts without compromising on luxury.</p-->  
-	</div>
-	
-    </div>
-</div>
-<!-- Modal -->
-<div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle2" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle2" style="color:#000;">Project of Mr Ravish , Skandavani Villa at Sarjapur</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="wrap-modal-slider2">
-          <div class="your-class2">
-            <div><img src="projects/Ravish/ravish1.jfif" alt="" style="width:100%;height:660px;"></div>
-            <div><img src="projects/Ravish/ravish2.jfif" alt="" style="width:100%;height:660px;"></div>
-            <div><img src="projects/Ravish/ravish3.jfif" alt="" style="width:100%;height:660px;"></div>
-			<div><img src="projects/Ravish/ravish4.jfif" alt="" style="width:100%;height:660px;"></div>
-            <div><img src="projects/Ravish/ravish5.jfif" alt="" style="width:100%;height:660px;"></div>
-            <div><img src="projects/Ravish/ravish6.jfif" alt="" style="width:100%;height:660px;"></div>
-			<div><img src="projects/Ravish/ravish7.jfif" alt="" style="width:100%;height:660px;"></div>
-            <div><img src="projects/Ravish/ravish8.jfif" alt="" style="width:100%;height:660px;"></div>
-            <div><img src="projects/Ravish/ravish9.jfif" alt="" style="width:100%;height:660px;"></div>
-			<div><img src="projects/Ravish/ravish10.jfif" alt="" style="width:100%;height:660px;"></div>
-            <div><img src="projects/Ravish/ravish11.jfif" alt="" style="width:100%;height:660px;"></div>
-		
-            
-    
+        <div class="dropdown zo w3-bar">
+          <button class="dropbtn w3-bar-item w3-padding-large w3-text-white">
+            LOOKS
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content w3-black">
+            <div class="row">
+              <div class="w3-center">
+                <a href="living.html"><h6>Living/Dining rooms</h6></a>
+              </div>
+              <div class="w3-center">
+                <a href="bedrooms.html"><h6>Bed rooms</h6></a>
+              </div>
+              <div class="w3-center">
+                <a href="kitchens.html"><h6>Kitchens</h6></a>
+              </div>
+              <div class="w3-center">
+                <a href="kidrooms.html"><h6>Kids' rooms</h6></a>
+              </div>
+              <div class="w3-center">
+                <a href="pooja.html"><h6>Pooja room</h6></a>
+              </div>
+              <div class="w3-center">
+                <a href="foyer.html"><h6>Foyer</h6></a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      
+        <a href="our-work.html" class="w3-bar-item w3-button w3-padding-large"
+          >OUR WORK</a
+        >
+        <a
+          href="index.html#materials"
+          class="w3-bar-item w3-button w3-padding-large"
+          >MATERIALS</a
+        >
+        <a href="howitworks.html" class="w3-bar-item w3-button w3-padding-large"
+          >HOW WE WORK?</a
+        >
+        <a href="contact.html" class="w3-bar-item w3-button w3-padding-large"
+          >CONTACT US</a
+        >
       </div>
     </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="w3-quarter" data-toggle="modal" data-target="#exampleModalCenter3">
-	<div class="w3-card w3-white work-card" style="">
-		<img src="projects/Kishore/kishore2.jfif" alt="Lights" style="width:100%">
-	<div class="w3-container">
-	<h3>Project of Mr Kishore Parkwest</h3>
-	<!--p> Array Interiors design highly curated living rooms suiting your comforts without compromising on luxury.</p-->  
-	</div>
-	
-    </div>
-</div>
-<!-- Modal -->
-<div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle3" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle3" style="color:#000;">Project of Mr Kishore Parkwest</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+    <!-- Header section-->
+    <header
+      class="w3-container xyz w3-teal"
+      style="padding: 62px 16px; height: 100vh"
+    >
+      <img src="logo.jpg" height="100px" />
+      <div class="w3-center" style="padding: 30px 16px; min-height: 650px">
+        <p class="w3-xxxlarge" style="text-shadow: 1px 1px 3px black">
+          ARRAY INTERIORS<br />
+          <span class="w3-xlarge">Designing Dreams</span>
+        </p>
+        <a href="howitworks.html"
+          ><button
+            class="w3-button w3-white w3-padding-large w3-large w3-margin-top"
+          >
+            Get Started
+          </button></a
+        >
       </div>
-      <div class="modal-body">
-        <div class="wrap-modal-slider3">
-          <div class="your-class3">
-            <div><img src="projects/Kishore/kishore1.jfif" alt="" style="width:100%;height:660px;"></div>
-            <div><img src="projects/Kishore/kishore2.jfif" alt="" style="width:100%;height:660px;"></div>
-            <div><img src="projects/Kishore/kishore3.jfif" alt="" style="width:100%;height:660px;"></div>
-			<div><img src="projects/Kishore/kishore4.jfif" alt="" style="width:100%;height:660px;"></div>
-            <div><img src="projects/Kishore/kishore5.jfif" alt="" style="width:100%;height:660px;"></div>
-            <div><img src="projects/Kishore/kishore6.jfif" alt="" style="width:100%;height:660px;"></div>
-			<div><img src="projects/Kishore/kishore7.jfif" alt="" style="width:100%;height:660px;"></div>
-            <div><img src="projects/Kishore/kishore8.jfif" alt="" style="width:100%;height:660px;"></div>
-            <div><img src="projects/Kishore/kishore9.jfif" alt="" style="width:100%;height:660px;"></div>
-			<div><img src="projects/Kishore/kishore10.jfif" alt="" style="width:100%;height:660px;"></div>
-            <div><img src="projects/Kishore/kishore11.jfif" alt="" style="width:100%;height:660px;"></div>
-			
-            
-    
+    </header>
+
+    <!-- About us section -->
+    <div
+      class="w3-row-padding w3-padding-64 w3-container w3-text-white"
+      id="ourwork"
+    >
+      <!-- Statistics section for mobile view-->
+
+      <section id="work">
+        <!-- Work section -->
+        <div class="w3-row-padding w3-padding-large w3-center">
+          <h1 style="color: #000; margin-bottom: 35px">Our Work</h1>
+
+          <div
+            class="w3-quarter"
+            data-toggle="modal"
+            data-target="#exampleModalCenter"
+          >
+            <div class="w3-card w3-white work-card">
+              <img
+                src="projects/Rahul/rahul1.jfif"
+                alt="Lights"
+                style="width: 100%"
+              />
+              <div class="w3-container">
+                <h3>Project of Mr Rahul Parkwest</h3>
+                <!--p> Array Interiors design highly curated living rooms suiting your comforts without compromising on luxury.</p-->
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModalCenter"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5
+                    class="modal-title"
+                    id="exampleModalCenterTitle"
+                    style="color: #000"
+                  >
+                    Project of Mr Rahul Parkwest
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="wrap-modal-slider">
+                    <div class="your-class">
+                      <div>
+                        <img
+                          src="projects/Rahul/rahul2.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/Rahul/rahul3.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/Rahul/rahul4.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/Rahul/rahul5.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/Rahul/rahul6.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/Rahul/rahul7.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/Rahul/rahul8.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/Rahul/rahul9.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/Rahul/rahul10.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/Rahul/rahul11.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/Rahul/rahul12.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w3-quarter"
+            data-toggle="modal"
+            data-target="#exampleModalCenter2"
+          >
+            <div class="w3-card w3-white work-card">
+              <img
+                src="projects/Ravish/ravish2.jfif"
+                alt="Lights"
+                style="width: 100%"
+              />
+              <div class="w3-container">
+                <h3>Project of Mr Ravish , Skandavani Villa at Sarjapur</h3>
+                <!--p> Array Interiors design highly curated living rooms suiting your comforts without compromising on luxury.</p-->
+              </div>
+            </div>
+          </div>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModalCenter2"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle2"
+            aria-hidden="true"
+          >
+            //
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5
+                    class="modal-title"
+                    id="exampleModalCenterTitle2"
+                    style="color: #000"
+                  >
+                    Project of Mr Ravish , Skandavani Villa at Sarjapur
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="wrap-modal-slider2">
+                    <div class="your-class2">
+                      <div>
+                        <img
+                          src="projects/Ravish/ravish1.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/Ravish/ravish2.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/Ravish/ravish3.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/Ravish/ravish4.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/Ravish/ravish5.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/Ravish/ravish6.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/Ravish/ravish7.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/Ravish/ravish8.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/Ravish/ravish9.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/Ravish/ravish10.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/Ravish/ravish11.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w3-quarter"
+            data-toggle="modal"
+            data-target="#exampleModalCenter3"
+          >
+            <div class="w3-card w3-white work-card">
+              <img
+                src="projects/Kishore/kishore2.jfif"
+                alt="Lights"
+                style="width: 100%"
+              />
+              <div class="w3-container">
+                <h3>Project of Mr Kishore Parkwest</h3>
+                <!--p> Array Interiors design highly curated living rooms suiting your comforts without compromising on luxury.</p-->
+              </div>
+            </div>
+          </div>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModalCenter3"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle3"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5
+                    class="modal-title"
+                    id="exampleModalCenterTitle3"
+                    style="color: #000"
+                  >
+                    Project of Mr Kishore Parkwest
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="wrap-modal-slider3">
+                    <div class="your-class3">
+                      <div>
+                        <img
+                          src="projects/Kishore/kishore1.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/Kishore/kishore2.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/Kishore/kishore3.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/Kishore/kishore4.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/Kishore/kishore5.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/Kishore/kishore6.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/Kishore/kishore7.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/Kishore/kishore8.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/Kishore/kishore9.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/Kishore/kishore10.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/Kishore/kishore11.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w3-quarter"
+            data-toggle="modal"
+            data-target="#exampleModalCenter4"
+          >
+            <div class="w3-card w3-white work-card">
+              <img
+                src="projects/Kush/Kush2.jfif"
+                alt="Lights"
+                style="width: 100%"
+              />
+              <div class="w3-container">
+                <h3>
+                  Project of Mr Kush Bhatnagar at Prestige Kew Gardens at just
+                  Rs 3.4 lakhs including Modular Kitchen
+                </h3>
+                <!--p> Array Interiors design highly curated living rooms suiting your comforts without compromising on luxury.</p-->
+              </div>
+            </div>
+          </div>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModalCenter4"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle4"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5
+                    class="modal-title"
+                    id="exampleModalCenterTitle4"
+                    style="color: #000"
+                  >
+                    Project of Mr Kush Bhatnagar at Prestige Kew Gardens at just
+                    Rs 3.4 lakhs including Modular Kitchen
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="wrap-modal-slider2">
+                    <div class="your-class4">
+                      <div>
+                        <img
+                          src="projects/Kush/Kush1.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/Kush/Kush2.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/Kush/Kush3.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/Kush/Kush4.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/Kush/Kush5.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/Kush/Kush6.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/Kush/Kush7.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w3-quarter"
+            data-toggle="modal"
+            data-target="#exampleModalCenter5"
+          >
+            <div class="w3-card w3-white work-card">
+              <img
+                src="projects/others/others1.jfif"
+                alt="Lights"
+                style="width: 100%"
+              />
+              <div class="w3-container">
+                <h3>
+                  Projects ranging from 2.5 lakhs to 3.5 lakhs at Tata New
+                  Haven, Prestige Kew gardens,etc..
+                </h3>
+                <!--p> Array Interiors design highly curated living rooms suiting your comforts without compromising on luxury.</p-->
+              </div>
+            </div>
+          </div>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModalCenter5"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle5"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5
+                    class="modal-title"
+                    id="exampleModalCenterTitle5"
+                    style="color: #000"
+                  >
+                    Projects ranging from 2.5 lakhs to 3.5 lakhs at Tata New
+                    Haven, Prestige Kew gardens,etc..
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="wrap-modal-slider">
+                    <div class="your-class5">
+                      <div>
+                        <img
+                          src="projects/others/others1.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/others/others2.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/others/others3.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/others/others4.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/others/others5.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/others/others6.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/others/others7.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/others/others8.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/others/others9.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/others/others10.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/others/others11.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/others/others12.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="projects/others/others13.jfif"
+                          alt=""
+                          style="width: 100%; height: 660px"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      
-      </div>
+      </section>
     </div>
-  </div>
-</div>
 
-
-
-
-
-<div class="w3-quarter" data-toggle="modal" data-target="#exampleModalCenter4">
-	<div class="w3-card w3-white work-card" style="">
-		<img src="projects/Kush/Kush2.jfif" alt="Lights" style="width:100%">
-	<div class="w3-container">
-	<h3>Project of Mr Kush Bhatnagar at Prestige Kew Gardens at just Rs 3.4 lakhs including Modular Kitchen</h3>
-	<!--p> Array Interiors design highly curated living rooms suiting your comforts without compromising on luxury.</p-->  
-	</div>
-	
-    </div>
-</div>
-<!-- Modal -->
-<div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle4" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle4" style="color:#000;">Project of Mr Kush Bhatnagar at Prestige Kew Gardens at just Rs 3.4 lakhs including Modular Kitchen</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+    <!-- Contact section-->
+    <div
+      class="
+        w3-container w3-sand w3-center w3-opacity w3-padding-16 w3-text-white
+      "
+      id="contact"
+    >
+      <div style="text-align: center">
+        <h2>Contact Us</h2>
+        <!-- <p>Swing by for a cup of coffee, or leave us a message:</p> -->
       </div>
-      <div class="modal-body">
-        <div class="wrap-modal-slider2">
-          <div class="your-class4">
-            <div><img src="projects/Kush/Kush1.jfif" alt="" style="width:100%;height:660px;"></div>
-            <div><img src="projects/Kush/Kush2.jfif" alt="" style="width:100%;height:660px;"></div>
-            <div><img src="projects/Kush/Kush3.jfif" alt="" style="width:100%;height:660px;"></div>
-			<div><img src="projects/Kush/Kush4.jfif" alt="" style="width:100%;height:660px;"></div>
-            <div><img src="projects/Kush/Kush5.jfif" alt="" style="width:100%;height:660px;"></div>
-            <div><img src="projects/Kush/Kush6.jfif" alt="" style="width:100%;height:660px;"></div>
-			<div><img src="projects/Kush/Kush7.jfif" alt="" style="width:100%;height:660px;"></div>
-         
-		
-            
-    
-          </div>
+      <div class="row">
+        <div class="w3-half padding-large">
+          <ul class="contact-details">
+            <li>
+              <i class="fa fa-map-marker"></i>
+              <span
+                >#804, 24th Main Road,<br />&nbsp;&nbsp;&nbsp;&nbsp;12th Cross,
+                JP Ngar Phase 2,<br />&nbsp;&nbsp;&nbsp; Bangalore - 78</span
+              >
+            </li>
+            <li>
+              <i class="fa fa-phone"></i>
+              <span>+91-8618656767/+91-9964599493</span>
+            </li>
+            <li>
+              <i class="fa fa-envelope"></i>
+              <span>aradhana.interiors16@gmail.com</span>
+            </li>
+          </ul>
+        </div>
+        <div class="w3-half padding-large">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d486.12353471157223!2d77.5867725!3d12.9084748!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1512f0089639%3A0x6971192ff34c30a5!2s804%2C+22nd+Main+Rd%2C+2nd+Phase%2C+JP+Nagar%2C+Bengaluru%2C+Karnataka+560041!5e0!3m2!1sen!2sin!4v1536766354891"
+            frameborder="0"
+            class="map"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      
+    </div>
+
+    <footer class="w3-container w3-black w3-center">
+      <div class="w3-half">
+        <h6>
+          <i class="fa fa-copyright w3-hover-opacity"></i> 2018. All rights
+          reserved.
+        </h6>
       </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-<div class="w3-quarter" data-toggle="modal" data-target="#exampleModalCenter5">
-	<div class="w3-card w3-white work-card" style="">
-		<img src="projects/others/others1.jfif" alt="Lights" style="width:100%">
-	<div class="w3-container">
-	<h3>Projects ranging from 2.5 lakhs to 3.5 lakhs at Tata New Haven, Prestige Kew gardens,etc..</h3>
-	<!--p> Array Interiors design highly curated living rooms suiting your comforts without compromising on luxury.</p-->  
-	</div>
-	
-    </div>
-</div>
-<!-- Modal -->
-<div class="modal fade" id="exampleModalCenter5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle5" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle5" style="color:#000;">Projects ranging from 2.5 lakhs to 3.5 lakhs at Tata New Haven, Prestige Kew gardens,etc..</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+      <div class="w3-third"></div>
+      <div class="w3-half m-padding">
+        <h6>
+          Developed by
+          <a
+            target="_blank"
+            class="no-underline brown"
+            href="https://icsoln.com"
+            >ICS</a
+          >
+        </h6>
       </div>
-      <div class="modal-body">
-        <div class="wrap-modal-slider">
-          <div class="your-class5">
-            <div><img src="projects/others/others1.jfif" alt="" style="width:100%;height:660px;"></div>
-            <div><img src="projects/others/others2.jfif" alt="" style="width:100%;height:660px;"></div>
-            <div><img src="projects/others/others3.jfif" alt="" style="width:100%;height:660px;"></div>
-			<div><img src="projects/others/others4.jfif" alt="" style="width:100%;height:660px;"></div>
-            <div><img src="projects/others/others5.jfif" alt="" style="width:100%;height:660px;"></div>
-            <div><img src="projects/others/others6.jfif" alt="" style="width:100%;height:660px;"></div>
-			<div><img src="projects/others/others7.jfif" alt="" style="width:100%;height:660px;"></div>
-			<div><img src="projects/others/others8.jfif" alt="" style="width:100%;height:660px;"></div>
-            <div><img src="projects/others/others9.jfif" alt="" style="width:100%;height:660px;"></div>
-            <div><img src="projects/others/others10.jfif" alt="" style="width:100%;height:660px;"></div>
-			<div><img src="projects/others/others11.jfif" alt="" style="width:100%;height:660px;"></div>
-            <div><img src="projects/others/others12.jfif" alt="" style="width:100%;height:660px;"></div>
-            <div><img src="projects/others/others13.jfif" alt="" style="width:100%;height:660px;"></div>
-			
-         
-		
-            
-    
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      
-      </div>
+    </footer>
+
+    <!-- Fixed footer section for call to action -->
+    <div
+      class="footer2 w3-center w3-hide-large w3-hide-medium w3-padding-16"
+      style="box-shadow: 10px 8px 8px 8px #c9c9c9"
+    >
+      <a href="tel:+91-8618656767" style="text-decoration: none"
+        ><i
+          class="fa fa-phone w3-text-green w3-xlarge"
+          style="float: left; margin-left: 15px"
+        ></i
+      ></a>
+      <a
+        href="mailto:aradhana.interiors16@gmail.com"
+        style="text-decoration: none"
+        ><i class="fa fa-envelope w3-text-red w3-xlarge"></i
+      ></a>
+      <a href="" style="text-decoration: none" target="_blank"
+        ><i
+          class="fa fa-facebook-official w3-text-indigo w3-xlarge"
+          style="float: right; margin-right: 15px"
+        ></i
+      ></a>
     </div>
-  </div>
-</div>
 
+    <script>
+      $(document).ready(function () {
+        $(".your-class").slick();
+        $(".your-class2").slick();
+        $(".your-class3").slick();
+        $(".your-class4").slick();
+        $(".your-class5").slick();
+      });
 
+      $(".modal").on("shown.bs.modal", function (e) {
+        $(".your-class").slick("setPosition");
+        $(".your-class2").slick("setPosition");
+        $(".your-class3").slick("setPosition");
+        $(".your-class4").slick("setPosition");
+        $(".your-class5").slick("setPosition");
+        $(".wrap-modal-slider").addClass("open");
+      });
 
+      $(".modal2").on("shown.bs.modal", function (e) {
+        $(".your-class2").slick("setPosition");
+        $(".wrap-modal-slider2").addClass("open");
+      });
 
-
-
-</div>
-
-
-</section>
-
-
-
-  </div>
-
-
-
-<!-- Contact section-->
-<div class="w3-container w3-sand w3-center w3-opacity w3-padding-16 w3-text-white" id="contact">
-
-	
-
-  <div style="text-align:center">
-    <h2>Contact Us</h2>
-    <!-- <p>Swing by for a cup of coffee, or leave us a message:</p> -->
-  </div>
-  <div class="row">
-    <div class="w3-half padding-large">
-      <ul class="contact-details">
-          <li><i class="fa fa-map-marker"></i> <span>#804, 24th Main Road,<br>&nbsp;&nbsp;&nbsp;&nbsp;12th Cross, JP Ngar Phase 2,<br>&nbsp;&nbsp;&nbsp; Bangalore - 78</span></li>
-          <li><i class="fa fa-phone"></i> <span>+91-8618656767/+91-9964599493</span></li>
-          <li><i class="fa fa-envelope" ></i> <span>aradhana.interiors16@gmail.com</span></li>
-      </ul>
-      
-
-      
-    </div>
-    <div class="w3-half padding-large">
-  
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d486.12353471157223!2d77.5867725!3d12.9084748!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1512f0089639%3A0x6971192ff34c30a5!2s804%2C+22nd+Main+Rd%2C+2nd+Phase%2C+JP+Nagar%2C+Bengaluru%2C+Karnataka+560041!5e0!3m2!1sen!2sin!4v1536766354891" frameborder="0"  class="map" allowfullscreen></iframe>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-<footer class="w3-container w3-black w3-center" >  
-<div class="w3-half">
-    <h6><i class="fa fa-copyright w3-hover-opacity"></i> 2018. All rights reserved.</h6>
-</div>
-<div class="w3-third">
-   
-</div>
-<div class="w3-half m-padding">
-    <h6>Developed by <a target="_blank" class="no-underline brown" href="https://icsoln.com">ICS</a></h6>
-</div>
-</footer>
-
-<!-- Fixed footer section for call to action -->
- <div class="footer2 w3-center w3-hide-large w3-hide-medium w3-padding-16" style="box-shadow:10px 8px 8px 8px #c9c9c9;">
-  <a href="tel:+91-8618656767" style="text-decoration:none"><i class="fa fa-phone w3-text-green w3-xlarge" style="float:left;margin-left:15px"></i></a>
-  <a href="mailto:aradhana.interiors16@gmail.com" style="text-decoration:none"><i class="fa fa-envelope w3-text-red w3-xlarge"></i></a>
-  <a href="" style="text-decoration:none" target="_blank"><i class="fa fa-facebook-official w3-text-indigo w3-xlarge" style="float:right;margin-right:15px"></i></a>
-</div>
- 
-
-<script>
-$(document).ready(function(){
-
-
-
-
-  $('.your-class').slick();
-    $('.your-class2').slick();
-	 $('.your-class3').slick();
-	 $('.your-class4').slick();
-	 $('.your-class5').slick();
-});
-
-$('.modal').on('shown.bs.modal', function (e) {
-  $('.your-class').slick('setPosition');
-    $('.your-class2').slick('setPosition');
-	  $('.your-class3').slick('setPosition');
-	    $('.your-class4').slick('setPosition');
-		  $('.your-class5').slick('setPosition');
-  $('.wrap-modal-slider').addClass('open');
-})
-
-$('.modal2').on('shown.bs.modal', function (e) {
-  $('.your-class2').slick('setPosition');
-  $('.wrap-modal-slider2').addClass('open');
-})
-
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else { 
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
-<script>
-
-</body>
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+    </script>
+  </body>
 </html>
