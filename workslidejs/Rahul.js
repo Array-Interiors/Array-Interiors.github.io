@@ -9,15 +9,15 @@ var slider_img3 = document.querySelector('.slider-image-kush')
 // other selector
 var slider_img4 = document.querySelector('.slider-image-others')
 
-var rahulimg = ['rahul1.jfif', 'rahul2.jfif', 'rahul3.jfif', 'rahul4.jfif', 'rahul5.jfif', 'rahul6.jfif', 'rahul7.jfif', 'rahul8.jfif', 'rahul9.jfif', 'rahul10.jfif', 'rahul11.jfif', 'rahul12.jfif'];
+var rahulimg = ['rahul1.jfif', 'rahul2.jfif', 'rahul3.jfif', 'rahul4.jfif', 'rahul5.jfif', 'rahul6.jfif', 'rahul7.jfif', 'rahul8.jfif', 'rahul9.jfif', 'rahul10.jfif'];
 
-var ravishimg = ['ravish1.jfif', 'ravish2.jfif', 'ravish3.jfif', 'ravish4.jfif', 'ravish5.jfif', 'ravish6.jfif', 'ravish7.jfif', 'ravish8.jfif', 'ravish9.jfif', 'ravish10.jfif', 'ravish11.jfif', 'ravish12.jfif', 'ravish13.jfif', 'ravish14.jfif', 'ravish15.jfif', 'ravish16.jfif', 'ravish17.jfif', 'ravish18.jfif', 'ravish19.jfif', 'ravish20.jfif'];
+var ravishimg = ['ravish1.jfif', 'ravish2.jfif', 'ravish3.jfif', 'ravish4.jfif', 'ravish5.jfif', 'ravish6.jfif', 'ravish7.jfif', 'ravish8.jfif', 'ravish9.jfif', 'ravish10.jfif'];
 
-var kishoreimg = ['kishore1.jfif', 'kishore2.jfif', 'kishore3.jfif', 'kishore4.jfif', 'kishore5.jfif', 'kishore6.jfif', 'kishore7.jfif', 'kishore8.jfif', 'kishore9.jfif', 'kishore10.jfif', 'kishore11.jfif'];
+var kishoreimg = ['kishore2.jfif', 'kishore3.jfif', 'kishore4.jfif', 'kishore5.jfif', 'kishore6.jfif', 'kishore7.jfif', 'kishore8.jfif', 'kishore9.jfif', 'kishore10.jfif', 'kishore11.jfif'];
 
 var kushimg = ['Kush1.jfif', 'Kush2.jfif', 'Kush3.jfif', 'Kush4.jfif', 'Kush5.jfif', 'Kush6.jfif', 'Kush7.jfif'];
 
-var othersimg = ['others1.jfif', 'others2.jfif', 'others3.jfif', 'others4.jfif', 'others5.jfif', 'others6.jfif', 'others7.jfif', 'others8.jfif', 'others9.jfif', 'others10.jfif', 'others11.jfif', 'others12.jfif', 'others13.jfif'];
+var othersimg = ['others1.jfif', 'others2.jfif', 'others3.jfif', 'others4.jfif', 'others5.jfif', 'others6.jfif', 'others7.jfif', 'others8.jfif', 'others9.jfif', 'others10.jfif'];
 
 
 var i = 0;
