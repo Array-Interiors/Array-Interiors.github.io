@@ -15,7 +15,7 @@ var ravishimg = ['ravish1.jfif', 'ravish2.jfif', 'ravish3.jfif', 'ravish4.jfif',
 
 var kishoreimg = ['kishore1.jfif', 'kishore2.jfif', 'kishore3.jfif', 'kishore4.jfif', 'kishore5.jfif', 'kishore6.jfif', 'kishore7.jfif', 'kishore8.jfif', 'kishore9.jfif', 'kishore10.jfif', 'kishore11.jfif'];
 
-var kushimg = ['kush1.jfif', 'kush2.jfif', 'kush3.jfif', 'kush4.jfif', 'kush5.jfif', 'kush6.jfif', 'kush7.jfif'];
+var kushimg = ['Kush1.jfif', 'Kush2.jfif', 'Kush3.jfif', 'Kush4.jfif', 'Kush5.jfif', 'Kush6.jfif', 'Kush7.jfif'];
 
 var othersimg = ['others1.jfif', 'others2.jfif', 'others3.jfif', 'others4.jfif', 'others5.jfif', 'others6.jfif', 'others7.jfif', 'others8.jfif', 'others9.jfif', 'others10.jfif', 'others11.jfif', 'others12.jfif', 'others13.jfif'];
 
