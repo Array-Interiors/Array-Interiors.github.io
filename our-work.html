@@ -29,14 +29,31 @@
       rel="stylesheet"
       href="https://kenwheeler.github.io/slick/slick/slick-theme.css"
     />
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <style>
+      .btnSlider {
+        border: none;
+        outline: none;
+        background: #bb4f39;
+        opacity: 0.8;
+        padding: 10px 30px;
+        font-size: 20px;
+        color: #fff;
+        cursor: pointer;
+        margin: 0 auto 1.5rem;
+      }
+
+      .btnSlider:hover {
+        opacity: 1;
+      }
       .work-card img {
         height: 600px;
       }
@@ -124,7 +141,8 @@
       }
 
       .modal-dialog {
-        max-width: 730px;
+        display: flex;
+        justify-content: center;
       }
 
       .wrap-modal-slider {
@@ -521,7 +539,7 @@
                 <div class="column w3-center">
                   <a href="living.html">
                     <img
-                      src="livingroom/1.jpg"
+                      src="livingroom/2246565-6.jpeg"
                       style="max-height: 120px; width: 100%"
                       class="w3-center"
                     />
@@ -766,7 +784,14 @@
             aria-hidden="true"
           >
             <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
+              <div
+                class="model-content"
+                style="
+                  padding: 1rem;
+                  background-color: white;
+                  border-radius: 0.3rem;
+                "
+              >
                 <div class="modal-header">
                   <h5
                     class="modal-title"
@@ -784,100 +809,16 @@
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div class="modal-body">
-                  <div class="wrap-modal-slider">
-                    <div class="your-class">
-                      <div>
-                        <img
-                          src="projects/Rahul/rahul2.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/Rahul/rahul3.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/Rahul/rahul4.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/Rahul/rahul5.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/Rahul/rahul6.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/Rahul/rahul7.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/Rahul/rahul8.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/Rahul/rahul9.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/Rahul/rahul10.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/Rahul/rahul11.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/Rahul/rahul12.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-dismiss="modal"
-                  >
-                    Close
-                  </button>
+                <div class="model-body">
+                  <img
+                    src="./projects/Rahul/rahul1.jfif"
+                    class="slider-image"
+                  />
                 </div>
               </div>
             </div>
+            <button class="btnSlider" onclick="prev()">prev</button>
+            <button class="btnSlider" onclick="next()">next</button>
           </div>
 
           <div
@@ -906,12 +847,19 @@
             aria-labelledby="exampleModalCenterTitle2"
             aria-hidden="true"
           >
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
+            <div class="modal-dialog" role="document">
+              <div
+                class="content-box"
+                style="
+                  padding: 1rem;
+                  background-color: white;
+                  border-radius: 0.3rem;
+                "
+              >
                 <div class="modal-header">
                   <h5
                     class="modal-title"
-                    id="exampleModalCenterTitle2"
+                    id="exampleModalCenterTitle"
                     style="color: #000"
                   >
                     Project of Mr Ravish , Skandavani Villa at Sarjapur
@@ -925,100 +873,14 @@
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div class="modal-body">
-                  <div class="wrap-modal-slider2">
-                    <div class="your-class2">
-                      <div>
-                        <img
-                          src="projects/Ravish/ravish1.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/Ravish/ravish2.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/Ravish/ravish3.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/Ravish/ravish4.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/Ravish/ravish5.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/Ravish/ravish6.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/Ravish/ravish7.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/Ravish/ravish8.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/Ravish/ravish9.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/Ravish/ravish10.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/Ravish/ravish11.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-dismiss="modal"
-                  >
-                    Close
-                  </button>
-                </div>
+                <img
+                  src="./projects/Ravish/ravish1.jfif"
+                  class="slider-image-ravish"
+                />
               </div>
             </div>
+            <button class="btnSlider" onclick="prev1()">prev</button>
+            <button class="btnSlider" onclick="next1()">next</button>
           </div>
 
           <div
@@ -1047,12 +909,19 @@
             aria-labelledby="exampleModalCenterTitle3"
             aria-hidden="true"
           >
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
+            <div class="modal-dialog" role="document">
+              <div
+                class="content-box"
+                style="
+                  padding: 1rem;
+                  background-color: white;
+                  border-radius: 0.3rem;
+                "
+              >
                 <div class="modal-header">
                   <h5
                     class="modal-title"
-                    id="exampleModalCenterTitle3"
+                    id="exampleModalCenterTitle"
                     style="color: #000"
                   >
                     Project of Mr Kishore Parkwest
@@ -1066,100 +935,14 @@
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div class="modal-body">
-                  <div class="wrap-modal-slider3">
-                    <div class="your-class3">
-                      <div>
-                        <img
-                          src="projects/Kishore/kishore1.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/Kishore/kishore2.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/Kishore/kishore3.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/Kishore/kishore4.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/Kishore/kishore5.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/Kishore/kishore6.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/Kishore/kishore7.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/Kishore/kishore8.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/Kishore/kishore9.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/Kishore/kishore10.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/Kishore/kishore11.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-dismiss="modal"
-                  >
-                    Close
-                  </button>
-                </div>
+                <img
+                  src="./projects/kishore/kishore1.jfif"
+                  class="slider-image-kishore"
+                />
               </div>
             </div>
+            <button class="btnSlider" onclick="prev2()">prev</button>
+            <button class="btnSlider" onclick="next2()">next</button>
           </div>
 
           <div
@@ -1191,12 +974,19 @@
             aria-labelledby="exampleModalCenterTitle4"
             aria-hidden="true"
           >
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
+            <div class="modal-dialog" role="document">
+              <div
+                class="content-box"
+                style="
+                  padding: 1rem;
+                  background-color: white;
+                  border-radius: 0.3rem;
+                "
+              >
                 <div class="modal-header">
                   <h5
                     class="modal-title"
-                    id="exampleModalCenterTitle4"
+                    id="exampleModalCenterTitle"
                     style="color: #000"
                   >
                     Project of Mr Kush Bhatnagar at Prestige Kew Gardens at just
@@ -1211,72 +1001,14 @@
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div class="modal-body">
-                  <div class="wrap-modal-slider2">
-                    <div class="your-class4">
-                      <div>
-                        <img
-                          src="projects/Kush/Kush1.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/Kush/Kush2.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/Kush/Kush3.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/Kush/Kush4.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/Kush/Kush5.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/Kush/Kush6.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/Kush/Kush7.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-dismiss="modal"
-                  >
-                    Close
-                  </button>
-                </div>
+                <img
+                  src="./projects/Kush/kush1.jfif"
+                  class="slider-image-kush"
+                />
               </div>
             </div>
+            <button class="btnSlider" onclick="prev3()">prev</button>
+            <button class="btnSlider" onclick="next3()">next</button>
           </div>
 
           <div
@@ -1308,12 +1040,19 @@
             aria-labelledby="exampleModalCenterTitle5"
             aria-hidden="true"
           >
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
+            <div class="modal-dialog" role="document">
+              <div
+                class="content-box"
+                style="
+                  padding: 1rem;
+                  background-color: white;
+                  border-radius: 0.3rem;
+                "
+              >
                 <div class="modal-header">
                   <h5
                     class="modal-title"
-                    id="exampleModalCenterTitle5"
+                    id="exampleModalCenterTitle"
                     style="color: #000"
                   >
                     Projects ranging from 2.5 lakhs to 3.5 lakhs at Tata New
@@ -1328,114 +1067,14 @@
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div class="modal-body">
-                  <div class="wrap-modal-slider">
-                    <div class="your-class5">
-                      <div>
-                        <img
-                          src="projects/others/others1.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/others/others2.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/others/others3.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/others/others4.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/others/others5.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/others/others6.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/others/others7.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/others/others8.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/others/others9.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/others/others10.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/others/others11.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/others/others12.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="projects/others/others13.jfif"
-                          alt=""
-                          style="width: 100%; height: 660px"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-dismiss="modal"
-                  >
-                    Close
-                  </button>
-                </div>
+                <img
+                  src="./projects/others/others1.jfif"
+                  class="slider-image-others"
+                />
               </div>
             </div>
+            <button class="btnSlider" onclick="prev4()">prev</button>
+            <button class="btnSlider" onclick="next4()">next</button>
           </div>
         </div>
       </section>
@@ -1559,5 +1198,6 @@
         }
       }
     </script>
+    <script src="workslidejs/Rahul.js"></script>
   </body>
 </html>
