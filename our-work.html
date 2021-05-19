@@ -17,114 +17,108 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://kenwheeler.github.io/slick/slick/slick-theme.css"
-    />
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <style>
-      .btnSlider {
-        border: none;
-        outline: none;
-        background: #8b3220;
-        padding: 10px 30px;
-        font-size: 20px;
-        color: #fff;
-        cursor: pointer;
-        margin: 0 auto 1.5rem;
-      }
-
-      .btnSlider:hover {
-        opacity: 0.7;
-      }
-      .work-card img {
-        height: 600px;
-      }
-      .work-card .w3-quarter {
-        cursor: pointer;
-        width: 33%;
-      }
-      .work-card .w3-container {
-        padding: 20px;
-        height: 120px;
-        background-color: #bb4f39 !important;
-      }
-      .work-card h3 {
-        font-size: 21px;
-        color: #fff;
-      }
-      .wrap-modal-slider .slick-next {
-        right: -45px;
-      }
-      .wrap-modal-slider .slick-prev {
-        left: -45px;
-      }
-
-      .wrap-modal-slider .slick-prev,
-      .slick-next {
-        width: 44px;
-        height: 40px;
-      }
-      .wrap-modal-slider3 .slick-next {
-        right: -45px;
-      }
-      .wrap-modal-slider3 .slick-prev {
-        left: -45px;
-      }
-      .wrap-modal-slider3 {
-        padding: 0px 30px;
-      }
-      .wrap-modal-slider3 .slick-prev,
-      .slick-next {
-        width: 44px;
-        height: 40px;
-      }
-
-      .wrap-modal-slider2 .slick-next {
-        right: -45px;
-      }
-      .wrap-modal-slider2 .slick-prev {
-        left: -45px;
-      }
-      .wrap-modal-slider2 {
-        padding: 0px 30px;
-      }
-      .wrap-modal-slider2 .slick-prev,
-      .slick-next {
-        width: 44px;
-        height: 40px;
-      }
-      .modal2 {
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
+      /* The Modal (background) */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
         left: 0;
-        z-index: 1050;
-        display: none;
-        overflow: hidden;
-        outline: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
       }
-      .slick-prev,
-      .slick-next {
-        z-index: 9999;
+
+      /* Modal Content/Box */
+      .modal-content {
+        background-color: transparent;
+        margin: auto auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: none;
+        width: 80%; /* Could be more or less, depending on screen size */
       }
+
+      /* The Close Button */
+      .close {
+        position: relative;
+        left: 95%;
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .work-card {
+        border: none;
+        box-shadow: 5px 5px 15px 10px #888888;
+        width: 25%;
+        height: 95vh;
+        color: black;
+        margin: 1rem;
+      }
+      .card-img {
+        height: 80%;
+        object-fit: contain;
+      }
+      .card-img img {
+        height: 100%;
+        width: 100%;
+      }
+      .card-text {
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #bb4f39;
+        color: #fff;
+      }
+      .modal {
+        color: black;
+        background-color: rgba(0, 0, 0, 0.9);
+      }
+
+      .your-class {
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+      }
+      .your-class div {
+        /* display: flex;
+        justify-content: center;
+        align-items: center;*/
+        width: 70vw;
+        height: 80vh;
+        padding: 2rem;
+      }
+      .your-class div img {
+        max-height: 100vh;
+        max-width: 100%;
+      }
+      .slick-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
       * {
         padding: 0;
         margin: 0;
@@ -132,33 +126,7 @@
         -moz-box-sizing: border-box;
         box-sizing: border-box;
       }
-      .modal-header .close {
-        cursor: pointer;
-        background: #bb4f39;
 
-        color: #fff;
-      }
-
-      .modal-dialog {
-        display: flex;
-        justify-content: center;
-      }
-
-      .wrap-modal-slider {
-        padding: 0 30px;
-        opacity: 0;
-        transition: all 0.3s;
-      }
-
-      .wrap-modal-slider.open {
-        opacity: 1;
-      }
-
-      /* .slick-prev:before,
-      .slick-next:before {
-        color: #bb4f39;
-        font-size: 44px;
-      } */
       body,
       h1,
       h2,
@@ -460,7 +428,7 @@
         background-color: inherit;
         font: inherit;
       }
-      .modal-footer .btn {
+      .btn {
         background: #bb4f39;
         border: #bb4f39 !important;
       }
@@ -753,470 +721,234 @@
 
       <section id="work">
         <!-- Work section -->
-        <div class="w3-row-padding w3-padding-large w3-center">
-          <h1 style="color: #000; margin-bottom: 35px">Our Work</h1>
-
-          <div
-            class="w3-quarter"
-            data-toggle="modal"
-            data-target="#exampleModalCenter"
-          >
-            <div class="w3-card w3-white work-card">
-              <img
-                src="projects/Rahul/rahul1.jfif"
-                alt="Lights"
-                style="width: 100%"
-              />
-              <div class="w3-container">
-                <h3>Project of Mr Rahul Parkwest</h3>
-                <!--p> Array Interiors design highly curated living rooms suiting your comforts without compromising on luxury.</p-->
-              </div>
+        <h1 style="color: #000; margin-bottom: 35px; text-align: center">
+          Our Work
+        </h1>
+        <div
+          class="ourWork"
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+          "
+        >
+          <!-- rahul -->
+          <div id="rahulBtn" class="work-card">
+            <div class="card-img">
+              <img src="projects/Rahul/rahul1.jfif" />
+            </div>
+            <div class="card-text">
+              <h3>Project of Mr Rahul Parkwest</h3>
             </div>
           </div>
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="exampleModalCenter"
-            tabindex="-1"
-            role="dialog"
-            aria-labelledby="exampleModalCenterTitle"
-            aria-hidden="true"
-          >
-            <button
-              class="btnSlider"
-              onclick="prev()"
-              style="
-                position: absolute;
-                left: 2rem;
-                top: 50vh;
-                border-radius: 50%;
-                z-index: 2;
-                position: fixed;
-              "
-            >
-              <i class="fas fa-arrow-left"></i>
-            </button>
-
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div
-                class="model-content"
-                style="
-                  padding: 1rem;
-                  background-color: white;
-                  border-radius: 0.3rem;
-                "
-              >
-                <div class="modal-header">
-                  <h5
-                    class="modal-title"
-                    id="exampleModalCenterTitle"
-                    style="color: #000"
-                  >
-                    Project of Mr Rahul Parkwest
-                  </h5>
-                  <button
-                    type="button"
-                    class="close"
-                    data-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+          <!-- The Modal -->
+          <div id="rahulModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="your-class">
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/Rahul/rahul2.jfif" />
                 </div>
-                <div class="model-body">
-                  <img
-                    src="./projects/Rahul/rahul1.jfif"
-                    class="slider-image simg"
-                  />
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/Rahul/rahul3.jfif" />
+                </div>
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/Rahul/rahul4.jfif" />
+                </div>
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/Rahul/rahul5.jfif" />
+                </div>
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/Rahul/rahul6.jfif" />
+                </div>
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/Rahul/rahul7.jfif" />
+                </div>
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/Rahul/rahul8.jfif" />
+                </div>
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/Rahul/rahul9.jfif" />
                 </div>
               </div>
             </div>
-            <button
-              class="btnSlider"
-              onclick="next()"
-              style="
-                position: absolute;
-                right: 2rem;
-                top: 50vh;
-                border-radius: 50%;
-                z-index: 2;
-                position: fixed;
-              "
-            >
-              <i class="fas fa-arrow-right"></i>
-            </button>
-            <button class="btnSlider" onclick="next()">prev</button>
-            <button class="btnSlider" onclick="next()">next</button>
           </div>
 
-          <div
-            class="w3-quarter"
-            data-toggle="modal"
-            data-target="#exampleModalCenter2"
-          >
-            <div class="w3-card w3-white work-card">
-              <img
-                src="projects/Ravish/ravish2.jfif"
-                alt="Lights"
-                style="width: 100%"
-              />
-              <div class="w3-container">
-                <h3>Project of Mr Ravish , Skandavani Villa at Sarjapur</h3>
-                <!--p> Array Interiors design highly curated living rooms suiting your comforts without compromising on luxury.</p-->
-              </div>
+          <!-- Ravish -->
+          <div id="RavishBtn" class="work-card">
+            <div class="card-img">
+              <img src="projects/Ravish/ravish2.jfif" />
+            </div>
+            <div class="card-text">
+              <h3>Project of Mr Ravish , Skandavani Villa at Sarjapur</h3>
             </div>
           </div>
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="exampleModalCenter2"
-            tabindex="-1"
-            role="dialog"
-            aria-labelledby="exampleModalCenterTitle2"
-            aria-hidden="true"
-          >
-            <button
-              class="btnSlider"
-              onclick="prev1()"
-              style="
-                position: absolute;
-                left: 2rem;
-                top: 50vh;
-                border-radius: 50%;
-                z-index: 2;
-                position: fixed;
-              "
-            >
-              <i class="fas fa-arrow-left"></i>
-            </button>
-
-            <div class="modal-dialog" role="document">
-              <div
-                class="content-box"
-                style="
-                  padding: 1rem;
-                  background-color: white;
-                  border-radius: 0.3rem;
-                "
-              >
-                <div class="modal-header">
-                  <h5
-                    class="modal-title"
-                    id="exampleModalCenterTitle"
-                    style="color: #000"
-                  >
-                    Project of Mr Ravish , Skandavani Villa at Sarjapur
-                  </h5>
-                  <button
-                    type="button"
-                    class="close"
-                    data-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+          <!-- The Modal -->
+          <div id="RavishModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="your-class">
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/Ravish/ravish12.jfif" />
                 </div>
-                <img
-                  src="./projects/Ravish/ravish1.jfif"
-                  class="slider-image-ravish"
-                />
-              </div>
-            </div>
-
-            <button
-              class="btnSlider"
-              onclick="next1()"
-              style="
-                position: absolute;
-                right: 2rem;
-                top: 50vh;
-                border-radius: 50%;
-                z-index: 2;
-                position: fixed;
-              "
-            >
-              <i class="fas fa-arrow-right"></i>
-            </button>
-            <button class="btnSlider" onclick="prev1()">prev</button>
-            <button class="btnSlider" onclick="next1()">next</button>
-          </div>
-
-          <div
-            class="w3-quarter"
-            data-toggle="modal"
-            data-target="#exampleModalCenter3"
-          >
-            <div class="w3-card w3-white work-card">
-              <img
-                src="projects/Kishore/kishore2.jfif"
-                alt="Lights"
-                style="width: 100%"
-              />
-              <div class="w3-container">
-                <h3>Project of Mr Kishore Parkwest</h3>
-                <!--p> Array Interiors design highly curated living rooms suiting your comforts without compromising on luxury.</p-->
-              </div>
-            </div>
-          </div>
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="exampleModalCenter3"
-            tabindex="-1"
-            role="dialog"
-            aria-labelledby="exampleModalCenterTitle3"
-            aria-hidden="true"
-          >
-            <button
-              class="btnSlider"
-              onclick="prev2()"
-              style="
-                position: absolute;
-                left: 2rem;
-                top: 50vh;
-                border-radius: 50%;
-                z-index: 2;
-                position: fixed;
-              "
-            >
-              <i class="fas fa-arrow-left"></i>
-            </button>
-            <div class="modal-dialog" role="document">
-              <div
-                class="content-box"
-                style="
-                  padding: 1rem;
-                  background-color: white;
-                  border-radius: 0.3rem;
-                "
-              >
-                <div class="modal-header">
-                  <h5
-                    class="modal-title"
-                    id="exampleModalCenterTitle"
-                    style="color: #000"
-                  >
-                    Project of Mr Kishore Parkwest
-                  </h5>
-                  <button
-                    type="button"
-                    class="close"
-                    data-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/Ravish/ravish3.jfif" />
                 </div>
-                <img
-                  src="./projects/kishore/kishore1.jfif"
-                  class="slider-image-kishore"
-                />
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/Ravish/ravish4.jfif" />
+                </div>
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/Ravish/ravish5.jfif" />
+                </div>
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/Ravish/ravish6.jfif" />
+                </div>
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/Ravish/ravish7.jfif" />
+                </div>
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/Ravish/ravish8.jfif" />
+                </div>
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/Ravish/ravish9.jfif" />
+                </div>
               </div>
             </div>
-            <button
-              class="btnSlider"
-              onclick="prev2()"
-              style="
-                position: absolute;
-                right: 2rem;
-                top: 50vh;
-                border-radius: 50%;
-                z-index: 2;
-                position: fixed;
-              "
-            >
-              <i class="fas fa-arrow-right"></i>
-            </button>
-            <button class="btnSlider" onclick="prev2()">prev</button>
-            <button class="btnSlider" onclick="next2()">next</button>
           </div>
 
-          <div
-            class="w3-quarter"
-            data-toggle="modal"
-            data-target="#exampleModalCenter4"
-          >
-            <div class="w3-card w3-white work-card">
-              <img
-                src="projects/Kush/Kush2.jfif"
-                alt="Lights"
-                style="width: 100%"
-              />
-              <div class="w3-container">
-                <h3>
-                  Project of Mr Kush Bhatnagar at Prestige Kew Gardens at just
-                  Rs 3.4 lakhs including Modular Kitchen
-                </h3>
-                <!--p> Array Interiors design highly curated living rooms suiting your comforts without compromising on luxury.</p-->
-              </div>
+          <!-- Kishore -->
+          <div id="KishoreBtn" class="work-card">
+            <div class="card-img">
+              <img src="projects/Kishore/Kishore1.jfif" />
+            </div>
+            <div class="card-text">
+              <h3>Project of Mr Kishore Parkwest</h3>
             </div>
           </div>
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="exampleModalCenter4"
-            tabindex="-1"
-            role="dialog"
-            aria-labelledby="exampleModalCenterTitle4"
-            aria-hidden="true"
-          >
-            <button
-              class="btnSlider"
-              onclick="prev3()"
-              style="
-                position: absolute;
-                left: 2rem;
-                top: 50vh;
-                border-radius: 50%;
-                z-index: 2;
-                position: fixed;
-              "
-            >
-              <i class="fas fa-arrow-left"></i>
-            </button>
-            <div class="modal-dialog" role="document">
-              <div
-                class="content-box"
-                style="
-                  padding: 1rem;
-                  background-color: white;
-                  border-radius: 0.3rem;
-                "
-              >
-                <div class="modal-header">
-                  <h5
-                    class="modal-title"
-                    id="exampleModalCenterTitle"
-                    style="color: #000"
-                  >
-                    Project of Mr Kush Bhatnagar at Prestige Kew Gardens at just
-                    Rs 3.4 lakhs including Modular Kitchen
-                  </h5>
-                  <button
-                    type="button"
-                    class="close"
-                    data-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+          <!-- The Modal -->
+          <div id="KishoreModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="your-class">
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/Kishore/Kishore2.jfif" />
                 </div>
-                <img
-                  src="./projects/Kush/kush1.jfif"
-                  class="slider-image-kush"
-                />
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/Kishore/Kishore3.jfif" />
+                </div>
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/Kishore/Kishore4.jfif" />
+                </div>
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/Kishore/Kishore5.jfif" />
+                </div>
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/Kishore/Kishore6.jfif" />
+                </div>
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/Kishore/Kishore7.jfif" />
+                </div>
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/Kishore/Kishore8.jfif" />
+                </div>
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/Kishore/Kishore9.jfif" />
+                </div>
               </div>
             </div>
-            <button
-              class="btnSlider"
-              onclick="prev3()"
-              style="
-                position: absolute;
-                right: 2rem;
-                top: 50vh;
-                border-radius: 50%;
-                z-index: 2;
-                position: fixed;
-              "
-            >
-              <i class="fas fa-arrow-right"></i>
-            </button>
-            <button class="btnSlider" onclick="prev3()">prev</button>
-            <button class="btnSlider" onclick="next3()">next</button>
           </div>
 
-          <div
-            class="w3-quarter"
-            data-toggle="modal"
-            data-target="#exampleModalCenter5"
-          >
-            <div class="w3-card w3-white work-card">
-              <img
-                src="projects/others/others1.jfif"
-                alt="Lights"
-                style="width: 100%"
-              />
-              <div class="w3-container">
-                <h3>
-                  Projects ranging from 2.5 lakhs to 3.5 lakhs at Tata New
-                  Haven, Prestige Kew gardens,etc..
-                </h3>
-                <!--p> Array Interiors design highly curated living rooms suiting your comforts without compromising on luxury.</p-->
+          <!-- Kush -->
+          <div id="KushBtn" class="work-card">
+            <div class="card-img">
+              <img src="projects/Kush/Kush1.jfif" />
+            </div>
+            <div class="card-text">
+              <h3>
+                Project of Mr Kush Bhatnagar at Prestige Kew Gardens at just Rs
+                3.4 lakhs including Modular Kitchen
+              </h3>
+            </div>
+          </div>
+          <!-- The Modal -->
+          <div id="KushModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="your-class">
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/Kush/Kush2.jfif" />
+                </div>
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/Kush/Kush3.jfif" />
+                </div>
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/Kush/Kush4.jfif" />
+                </div>
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/Kush/Kush5.jfif" />
+                </div>
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/Kush/Kush6.jfif" />
+                </div>
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/Kush/Kush7.jfif" />
+                </div>
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/Kush/Kush1.jfif" />
+                </div>
               </div>
             </div>
           </div>
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="exampleModalCenter5"
-            tabindex="-1"
-            role="dialog"
-            aria-labelledby="exampleModalCenterTitle5"
-            aria-hidden="true"
-          >
-            <button
-              class="btnSlider"
-              onclick="prev4()"
-              style="
-                position: absolute;
-                left: 2rem;
-                top: 50vh;
-                border-radius: 50%;
-                z-index: 2;
-                position: fixed;
-              "
-            >
-              <i class="fas fa-arrow-left"></i>
-            </button>
-            <div class="modal-dialog" role="document">
-              <div
-                class="content-box"
-                style="
-                  padding: 1rem;
-                  background-color: white;
-                  border-radius: 0.3rem;
-                "
-              >
-                <div class="modal-header">
-                  <h5
-                    class="modal-title"
-                    id="exampleModalCenterTitle"
-                    style="color: #000"
-                  >
-                    Projects ranging from 2.5 lakhs to 3.5 lakhs at Tata New
-                    Haven, Prestige Kew gardens,etc..
-                  </h5>
-                  <button
-                    type="button"
-                    class="close"
-                    data-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+
+          <!-- others -->
+          <div id="othersBtn" class="work-card">
+            <div class="card-img">
+              <img src="projects/others/others1.jfif" />
+            </div>
+            <div class="card-text">
+              <h3>
+                Projects ranging from 2.5 lakhs to 3.5 lakhs at Tata New Haven,
+                Prestige Kew gardens,etc..
+              </h3>
+            </div>
+          </div>
+          <!-- The Modal -->
+          <div id="othersModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="your-class">
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/others/others2.jfif" />
                 </div>
-                <img
-                  src="./projects/others/others1.jfif"
-                  class="slider-image-others"
-                />
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/others/others3.jfif" />
+                </div>
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/others/others4.jfif" />
+                </div>
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/others/others5.jfif" />
+                </div>
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/others/others6.jfif" />
+                </div>
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/others/others7.jfif" />
+                </div>
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/others/others8.jfif" />
+                </div>
+                <div style="display: flex; justify-content: center">
+                  <img src="./projects/others/others9.jfif" />
+                </div>
               </div>
             </div>
-            <button
-              class="btnSlider"
-              onclick="prev4()"
-              style="
-                position: absolute;
-                right: 2rem;
-                top: 50vh;
-                border-radius: 50%;
-                z-index: 2;
-                position: fixed;
-              "
-            >
-              <i class="fas fa-arrow-right"></i>
-            </button>
-            <button class="btnSlider" onclick="prev4()">prev</button>
-            <button class="btnSlider" onclick="next4()">next</button>
           </div>
         </div>
       </section>
@@ -1306,40 +1038,19 @@
         ></i
       ></a>
     </div>
-
-    <script>
+    <script type="text/javascript">
       $(document).ready(function () {
-        $(".your-class").slick();
-        $(".your-class2").slick();
-        $(".your-class3").slick();
-        $(".your-class4").slick();
-        $(".your-class5").slick();
+        $(".your-class").slick({
+          dots: true,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          centerMode: true,
+          variableWidth: true,
+          adaptiveHeight: true,
+        });
       });
-
-      $(".modal").on("shown.bs.modal", function (e) {
-        $(".your-class").slick("setPosition");
-        $(".your-class2").slick("setPosition");
-        $(".your-class3").slick("setPosition");
-        $(".your-class4").slick("setPosition");
-        $(".your-class5").slick("setPosition");
-        $(".wrap-modal-slider").addClass("open");
-      });
-
-      $(".modal2").on("shown.bs.modal", function (e) {
-        $(".your-class2").slick("setPosition");
-        $(".wrap-modal-slider2").addClass("open");
-      });
-
-      // Used to toggle the menu on small screens when clicking on the menu button
-      function myFunction() {
-        var x = document.getElementById("navDemo");
-        if (x.className.indexOf("w3-show") == -1) {
-          x.className += " w3-show";
-        } else {
-          x.className = x.className.replace(" w3-show", "");
-        }
-      }
     </script>
-    <script src="workslidejs/Rahul.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
